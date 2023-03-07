@@ -8,7 +8,7 @@ const rememberDiv = document.querySelector('.remember');
 
 // div reference: for hiding and displaying the `forget` block
 const forgetDiv = document.querySelector('.forget');
-forgetDiv.setAttribute('style', 'display:none');
+forgetDiv.setAttribute('style', 'display: none');
 
 // input
 const save = document.querySelector('#entername');
@@ -71,10 +71,10 @@ function updateUI(name) {
         p.textContent = `Welcome to our website, ${localName}! We hope you have fun while you are here.`;
 
         // hide the input block
-        rememberDiv.setAttribute('style', 'display:none');
+        rememberDiv.setAttribute('style', 'display: none');
 
         // unhide the forget block
-        forgetDiv.setAttribute('style', 'display:block');
+        forgetDiv.setAttribute('style', 'display: block');
 
     } else {
 
@@ -82,10 +82,10 @@ function updateUI(name) {
         p.textContent = 'Welcome to our website.';
 
         // unhide the `input` block
-        rememberDiv.setAttribute('style', 'display:block');
+        rememberDiv.setAttribute('style', 'display: block');
 
         // hide the `forget` block
-        forgetDiv.setAttribute('style', 'display:none');
+        forgetDiv.setAttribute('style', 'display: none');
 
     }
 }
