@@ -37,8 +37,6 @@ saveBtn.addEventListener('click', () => {
 });
 
 forgetBtn.addEventListener('click', () => {
-    const localName = localStorage.getItem(name);
-    console.log(`name: ${localName}`);
     localStorage.removeItem('name');
     updateUI();
 });
@@ -63,6 +61,8 @@ function saveName(name) {
  */
 function updateUI(name) {
     if (name !== undefined) {
+        
+        const localName = localStorage.getItem(name);
 
         h1.textContent = `Welcome, ${localName}`;
         p.textContent = `Welcome to our website, ${localName}! We hope you have fun while you are here.`;
